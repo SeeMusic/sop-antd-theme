@@ -1,7 +1,9 @@
 {
-  "private": true,
-  "name": "sop-antd-theme",
+  "name": "@seemusic/sop-antd-theme",
+  "private": false,
   "version": "0.1.0",
+  "description": "看见音乐 SOP 系统自定义 UI 组件 React 版",
+  "author": "cuiguojie@kanjian.com",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

@@ -1,0 +1,66 @@
+.sop-status {
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.sop-status__text {
+  margin-left: 4px;
+  font-size: 12px;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+.sop-status__icon {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  vertical-align: middle;
+
+  &--all {
+    color: #333;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 50%;
+    }
+
+    &:before {
+      left: 0;
+      background-color: @blue;
+      box-shadow: 0 4px 0 0 @red;
+    }
+
+    &:after {
+      right: 0;
+      background-color: @green;
+      box-shadow: 0 4px 0 0 @orange;
+    }
+
+    overflow: hidden;
+  }
+
+  &--gray {
+    background-color: @gray;
+  }
+
+  &--green {
+    background-color: @green;
+  }
+
+  &--yellow {
+    background-color: @orange;
+  }
+
+  &--red {
+    background-color: @red;
+  }
+
+  &--blue {
+    background-color: @blue;
+  }
+}
